@@ -1,0 +1,116 @@
+body{
+     display: flex;
+     margin: 0px;
+     padding: 0px;
+     width: 0px;
+     height: 0px;
+    background-color:rgb(77, 137, 174);
+     box-sizing: border-box;
+}
+     
+.main-container{
+ display: flex;
+ padding: 0px ; 
+   box-sizing: border-box;
+   font-family: sans-serif;
+   font-size: small;
+}
+.navbar{
+     display: flex;
+     flex-direction:row;
+     justify-content:space-between;
+     align-items:center;
+  position: relative;
+  width: 1800px;
+  height:20%;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  list-style: none;
+  padding: 15px;
+  
+}
+.navbar li a{
+     color: black;
+     cursor:pointer;
+     font-size: large;
+     width: 100%;
+ text-decoration: none;
+     height: 100%;
+     
+}
+.content{
+     display:flex;
+ text-align: left;
+ position: absolute;  
+ margin:10px;  
+ padding-left: 10px;
+ font-size: 200px;
+ font-size: 20px;
+}
+.image{
+     display: flex;
+     margin-right:0px;
+     margin-top: 100px;
+     float: right;
+     padding-right: 0px;
+     background-image: url(./image1.webp);
+     background-repeat: no-repeat;
+     object-fit:fill;
+     border-radius: 50%;
+     width:50vh;
+     height:50vh;
+     background-position:right;
+     z-index: 1;
+     border: 15px solid;
+     border-width: 5px 5px 5px;
+     border-color: black;
+}
+     @media screen and (min-width:320) {
+          /*styles for mobile phone*/
+          body{
+               width: 50%;
+               height: 50%;
+               font-size: 5px;
+               background-attachment: fixed;
+               background-position: center;
+               nav{
+                    min-height: auto;
+                    min-width: fit-content;
+               }
+               .image{
+                    object-position:fill;
+                    background-position: 30px;
+                    margin: 0px;
+                    padding: 0%;
+               }
+
+          }
+     }
+     @media screen and (min-width:769px)and (max-width:1024px) {
+          /*styles for tablets */
+          body{
+          width: 50%;
+               height: 50%;
+               font-size: 15px;
+               background-attachment: fixed;
+               background-position: center;
+               
+               nav{
+                    min-height: auto;
+                    min-width: fit-content;
+               }
+          }
+     }
+     @media screen and (min-width:1025px) {
+          /*styles for desktop computers*/
+          body{
+               background-image: auto;
+               font-size: 15px;
+          }
+     }
+     @media  screen and(orientation:portait) {
+          /* style for portrait orientation*/
+     }
+     @media  screen and(orientaion:landscape) {
+          /* styles for landscape orientation*/
+     }
